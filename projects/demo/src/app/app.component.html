@@ -1,0 +1,20 @@
+<main>
+  <h1>ngx-nest-http demo</h1>
+  <p>Users load through a Nest-style API service. Requests are mocked in-browser.</p>
+
+  @if (error(); as message) {
+    <p class="error">{{ message }}</p>
+  }
+
+  <ul>
+    @for (user of users(); track user.id) {
+      <li>{{ user.name }}</li>
+    }
+  </ul>
+
+  <label>
+    Name
+    <input [value]="name" (input)="name = $any($event.target).value" />
+  </label>
+  <button type="button" (click)="create()">Create user</button>
+</main>

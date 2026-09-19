@@ -1,0 +1,47 @@
+{
+  "name": "ngx-nest-http-workspace",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Workspace for ngx-nest-http",
+  "scripts": {
+    "build": "ng build ngx-nest-http && npm run build:schematics",
+    "build:schematics": "tsc -p projects/ngx-nest-http/tsconfig.schematics.json && node scripts/copy-schematics-json.js",
+    "build:demo": "ng build demo",
+    "start": "ng serve demo",
+    "test": "ng test ngx-nest-http --watch=false --browsers=ChromeHeadlessCI",
+    "watch": "ng build ngx-nest-http --watch --configuration development"
+  },
+  "engines": {
+    "node": ">=20.11.0"
+  },
+  "dependencies": {
+    "@angular/common": "^19.2.15",
+    "@angular/compiler": "^19.2.15",
+    "@angular/core": "^19.2.15",
+    "@angular/platform-browser": "^19.2.25",
+    "@angular/platform-browser-dynamic": "^19.2.25",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.3",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1",
+    "tslib": "^2.8.1",
+    "zone.js": "^0.15.1"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^19.2.17",
+    "@angular-devkit/core": "^19.2.17",
+    "@angular-devkit/schematics": "^19.2.17",
+    "@angular/cli": "^19.2.17",
+    "@angular/compiler-cli": "^19.2.15",
+    "@schematics/angular": "^19.2.17",
+    "@types/jasmine": "^5.1.9",
+    "@types/node": "^26.6.2",
+    "jasmine-core": "^5.6.0",
+    "karma": "^6.4.4",
+    "karma-chrome-launcher": "^3.2.0",
+    "karma-jasmine": "^5.1.0",
+    "karma-jasmine-html-reporter": "^2.3.0",
+    "ng-packagr": "^19.2.2",
+    "typescript": "~5.7.2"
+  }
+}

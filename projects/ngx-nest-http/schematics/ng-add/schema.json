@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "NgxNestHttpNgAdd",
+  "title": "ngx-nest-http ng-add schematic",
+  "type": "object",
+  "properties": {
+    "project": {
+      "type": "string",
+      "description": "Name of the project to update.",
+      "$default": {
+        "$source": "projectName"
+      }
+    }
+  }
+}

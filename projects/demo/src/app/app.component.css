@@ -1,0 +1,32 @@
+:host {
+  display: block;
+  font-family: Inter, system-ui, sans-serif;
+  max-width: 40rem;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+  color: #111;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.error {
+  color: #b42318;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+label,
+button,
+input {
+  display: block;
+  margin-top: 0.75rem;
+}
+
+input,
+button {
+  padding: 0.45rem 0.6rem;
+}

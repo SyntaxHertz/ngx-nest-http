@@ -1,0 +1,41 @@
+{
+  "name": "ngx-nest-http",
+  "version": "0.1.0",
+  "description": "Angular HTTP client with Nest-style controllers, DTO validation, and declarative routing.",
+  "license": "MIT",
+  "author": "SyntaxHertz",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SyntaxHertz/ngx-nest-http.git"
+  },
+  "homepage": "https://github.com/SyntaxHertz/ngx-nest-http#readme",
+  "bugs": {
+    "url": "https://github.com/SyntaxHertz/ngx-nest-http/issues"
+  },
+  "keywords": [
+    "angular",
+    "http",
+    "nestjs",
+    "decorators",
+    "dto",
+    "class-validator",
+    "class-transformer",
+    "http-client"
+  ],
+  "peerDependencies": {
+    "@angular/common": ">=19.0.0",
+    "@angular/core": ">=19.0.0",
+    "class-transformer": ">=0.5.0",
+    "class-validator": ">=0.14.0",
+    "reflect-metadata": ">=0.1.13",
+    "rxjs": ">=7.8.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false,
+  "schematics": "./schematics/collection.json",
+  "ng-add": {
+    "save": "dependencies"
+  }
+}
