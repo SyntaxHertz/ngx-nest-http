@@ -1,0 +1,2 @@
+# Copy to .npmrc locally. Do not put a real token in this file.
+//registry.npmjs.org/:_authToken=YOUR_NPM_TOKEN
